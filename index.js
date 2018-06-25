@@ -43,7 +43,7 @@ app.get('/', async (req, res) => {
   res.status(400).send('Invalid end-point');
 });
 
-app.get('/users/:userId/courses/', async (req, res) => {
+app.get('/user/:userId/courses/', async (req, res) => {
   await connect();
   try {
     res.setHeader('Content-Type', 'application/json');
